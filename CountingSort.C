@@ -4,7 +4,7 @@ By: Ayushman srivastava*/
 #include<stdio.h>
 int main()
 {
-	int i,j,n,a[50],k;
+	int i, j, n, a[50], k;
 	printf("Enter array size followed by its elements from next line:\n");
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
@@ -13,7 +13,7 @@ int main()
 	}
 
 	/*Counting sort begins*/
-	int max=-100;
+	int max = -100;
 	for(i=0;i<n;i++)
 	{
 		if(a[i]>max)
