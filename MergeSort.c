@@ -51,7 +51,6 @@ void msort(int a[],int p , int r)
 		int m = (r+p)/2;
 		msort(a,p , m);
 		msort(a,m+1,r);
-		
 		merge(a,p,m,r);
 	}	
 }
@@ -62,17 +61,16 @@ int main()
 	printf("enter size  ");
 	scanf("%d",&n);
 	int a[n];
-		printf("enter array  ");
-		for(i=0;i<n;i++)
-		{
-			scanf("%d",&a[i]);
-		}	
-		msort(a,0,n-1);
-		printf("\n\n");
-		for(i=0;i<n;i++)
-		{
-			printf("  %d",a[i]);
-		}
-		
+	printf("enter array  ");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}	
+	msort(a,0,n-1);
+	printf("\n\n");
+	for(i=0;i<n;i++)
+	{
+		printf("  %d",a[i]);
+	}	
 	return 0;
 }
